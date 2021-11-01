@@ -49,7 +49,7 @@ public class MedicalChatbotApplication {
 
 		//Printing the sentences
 		for(String sent : sentences)
-			System.out.println("sent from open nlp "+ sent);
+			System.out.println("sent from open nlp :   "+ sent);
 
 
 		String paragraph = "Hi. How are you? Welcome to Tutorialspoint. "

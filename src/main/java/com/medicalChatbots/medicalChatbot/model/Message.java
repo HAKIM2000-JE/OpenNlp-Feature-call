@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Message {
     @Id
     private int id;
-    private String userName;
+    private  int idDisscussion ;
+    private String text;
 
 }

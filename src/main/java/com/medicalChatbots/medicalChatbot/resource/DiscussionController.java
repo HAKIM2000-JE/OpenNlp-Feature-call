@@ -2,9 +2,7 @@ package com.medicalChatbots.medicalChatbot.resource;
 
 import com.medicalChatbots.medicalChatbot.model.Discussion;
 import com.medicalChatbots.medicalChatbot.repository.DiscussionRepository;
-import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +18,7 @@ public class DiscussionController {
 
 
      @PostMapping("/addDiscussion")
-     public  String saveDisscuion(@RequestBody  Discussion discussion){
+     public  String saveDisscuion(@RequestBody Discussion discussion){
           repository.save(discussion);
           return "Created Disscussion with id : " +  discussion.getId();
 
@@ -40,7 +38,7 @@ public class DiscussionController {
      }
 
 
-     @DeleteMapping("/delete/{id}")
+     @DeleteMapping("/deleteDiscussion/{id}")
      public String deleteDiscussion(@PathVariable int id){
           repository.deleteById(id);
           return "Discussion Deleted with id " + id ;
