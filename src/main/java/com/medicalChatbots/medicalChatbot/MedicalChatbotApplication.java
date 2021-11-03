@@ -29,120 +29,112 @@ public class MedicalChatbotApplication {
 		SpringApplication.run(MedicalChatbotApplication.class, args);
 
 
-		
+		// 	String sentence = " Hi. How are you? Welcome to Tutorialspoint. "
+		// 			+ "We provide free tutorials on various technologies." +"other sentece to test number of sentences";
 
-	// 	String sentence = " Hi. How are you? Welcome to Tutorialspoint. "
-	// 			+ "We provide free tutorials on various technologies." +"other sentece to test number of sentences";
-
-	// 	String simple = "[.?!]";
-	// 	String[] splitString = (sentence.split(simple));
-	// 	for (String string : splitString)
-	// 		System.out.println(string);
+		// 	String simple = "[.?!]";
+		// 	String[] splitString = (sentence.split(simple));
+		// 	for (String string : splitString)
+		// 		System.out.println(string);
 
 
-	// 	//Loading sentence detector model
-	// 	InputStream inputStream = new FileInputStream("C:/OpenNLP_models/en-sent.bin");
-	// 	SentenceModel model = new SentenceModel(inputStream);
+		// 	//Loading sentence detector model
+		// 	InputStream inputStream = new FileInputStream("C:/OpenNLP_models/en-sent.bin");
+		// 	SentenceModel model = new SentenceModel(inputStream);
 
-	// 	//Instantiating the SentenceDetectorME class
-	// 	SentenceDetectorME detector = new SentenceDetectorME(model);
+		// 	//Instantiating the SentenceDetectorME class
+		// 	SentenceDetectorME detector = new SentenceDetectorME(model);
 
-	// 	//Detecting the sentence
-	// 	String sentences[] = detector.sentDetect(sentence);
+		// 	//Detecting the sentence
+		// 	String sentences[] = detector.sentDetect(sentence);
 
-	// 	//Printing the sentences
-	// 	for(String sent : sentences)
-	// 		System.out.println("sent from open nlp :   "+ sent);
-
-
-	// 	String paragraph = "Hi. How are you? Welcome to Tutorialspoint. "
-	// 			+ "We provide free tutorials on various technologies";
+		// 	//Printing the sentences
+		// 	for(String sent : sentences)
+		// 		System.out.println("sent from open nlp :   "+ sent);
 
 
-	// 	//Loading sentence detector model
-	// 	InputStream inputStream1 = new FileInputStream("C:/OpenNLP_models/en-sent.bin");
-	// 	SentenceModel model1 = new SentenceModel(inputStream1);
-
-	// 	//Instantiating the SentenceDetectorME class
-	// 	SentenceDetectorME detector1 = new SentenceDetectorME(model1);
-
-	// 	//Detecting the position of the sentences in the raw text
-	// 	Span spans[] = detector.sentPosDetect(paragraph);
-
-	// 	//Printing the spans of the sentences in the paragraph
-
-	// 	//Printing the spans of the sentences in the paragraph
-	// 	for (Span span : spans)
-	// 		System.out.println(span);
+		// 	String paragraph = "Hi. How are you? Welcome to Tutorialspoint. "
+		// 			+ "We provide free tutorials on various technologies";
 
 
+		// 	//Loading sentence detector model
+		// 	InputStream inputStream1 = new FileInputStream("C:/OpenNLP_models/en-sent.bin");
+		// 	SentenceModel model1 = new SentenceModel(inputStream1);
+
+		// 	//Instantiating the SentenceDetectorME class
+		// 	SentenceDetectorME detector1 = new SentenceDetectorME(model1);
+
+		// 	//Detecting the position of the sentences in the raw text
+		// 	Span spans[] = detector.sentPosDetect(paragraph);
+
+		// 	//Printing the spans of the sentences in the paragraph
+
+		// 	//Printing the spans of the sentences in the paragraph
+		// 	for (Span span : spans)
+		// 		System.out.println(span);
 
 
-	// 	//Instantiating SimpleTokenizer class
-	// 	SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;
+		// 	//Instantiating SimpleTokenizer class
+		// 	SimpleTokenizer simpleTokenizer = SimpleTokenizer.INSTANCE;
 
-	// 	//Tokenizing the given sentence
-	// 	String tokens[] = simpleTokenizer.tokenize(sentence);
+		// 	//Tokenizing the given sentence
+		// 	String tokens[] = simpleTokenizer.tokenize(sentence);
 
-	// 	//Printing the tokens
-	// 	for(String token : tokens) {
-	// 		System.out.println(token);
-	// 	}
-
-
-	// 	Span[] tokens1 = simpleTokenizer.tokenizePos(sentence);
+		// 	//Printing the tokens
+		// 	for(String token : tokens) {
+		// 		System.out.println(token);
+		// 	}
 
 
-	// 	//Printing the spans of tokens
-	// 	for( Span token : tokens1)
-	// 		System.out.println(token +" "+sentence.substring(token.getStart(), token.getEnd()));
+		// 	Span[] tokens1 = simpleTokenizer.tokenizePos(sentence);
 
 
-
-	// 	InputStream inputStream2 = new FileInputStream("C:/OpenNLP_models/es-ner-person.bin");
-	// 	TokenNameFinderModel model2 = new TokenNameFinderModel(inputStream2);
-
-	// 	//Instantiating the NameFinder class
-	// 	NameFinderME nameFinder = new NameFinderME(model2);
-
-	// 	//Getting the sentence in the form of String array
-	// 	String [] sentence2 = new String[]{
-	// 			"Mike",
-	// 			"and",
-	// 			"Smith",
-	// 			"are",
-	// 			"good",
-	// 			"friends"
-	// 	};
-
-	// 	//Finding the names in the sentence
-	// 	Span nameSpans[] = nameFinder.find(sentence2);
-
-	// 	//Printing the spans of the names in the sentence
-	// 	for(Span s: nameSpans)
-	// 		System.out.println(s.toString());
+		// 	//Printing the spans of tokens
+		// 	for( Span token : tokens1)
+		// 		System.out.println(token +" "+sentence.substring(token.getStart(), token.getEnd()));
 
 
+		// 	InputStream inputStream2 = new FileInputStream("C:/OpenNLP_models/es-ner-person.bin");
+		// 	TokenNameFinderModel model2 = new TokenNameFinderModel(inputStream2);
 
-	// 	//Loading parser model
-	// 	InputStream inputStream3 = new FileInputStream("C:/OpenNLP_models/en-parser-chunking.bin");
-	// 	ParserModel model3 = new ParserModel(inputStream3);
+		// 	//Instantiating the NameFinder class
+		// 	NameFinderME nameFinder = new NameFinderME(model2);
 
-	// 	//Creating a parser
-	// 	Parser parser = ParserFactory.create(model3);
+		// 	//Getting the sentence in the form of String array
+		// 	String [] sentence2 = new String[]{
+		// 			"Mike",
+		// 			"and",
+		// 			"Smith",
+		// 			"are",
+		// 			"good",
+		// 			"friends"
+		// 	};
 
-	// 	//Parsing the sentence
-	// 	String sentence3 = "Tutorialspoint is the largest tutorial library.";
-	// 	Parse topParses[] = ParserTool.parseLine(sentence, parser, 1);
+		// 	//Finding the names in the sentence
+		// 	Span nameSpans[] = nameFinder.find(sentence2);
 
-	// 	for (Parse p : topParses)
-	// 		p.show();
-	// }
-
+		// 	//Printing the spans of the names in the sentence
+		// 	for(Span s: nameSpans)
+		// 		System.out.println(s.toString());
 
 
+		// 	//Loading parser model
+		// 	InputStream inputStream3 = new FileInputStream("C:/OpenNLP_models/en-parser-chunking.bin");
+		// 	ParserModel model3 = new ParserModel(inputStream3);
+
+		// 	//Creating a parser
+		// 	Parser parser = ParserFactory.create(model3);
+
+		// 	//Parsing the sentence
+		// 	String sentence3 = "Tutorialspoint is the largest tutorial library.";
+		// 	Parse topParses[] = ParserTool.parseLine(sentence, parser, 1);
+
+		// 	for (Parse p : topParses)
+		// 		p.show();
+		// }
 
 
+	}
 }
 
 
