@@ -54,6 +54,9 @@ public class MedicalChatbotApplication {
 		questionAnswer.put("price-inquiry", "Price is $300");
 		questionAnswer.put("job", "We are lead company in software solution , we have more than 50 employes with average salary of 3000$ /month , you wanna apply ? ");
 		questionAnswer.put("localisation", "North Africa");
+		questionAnswer.put("offer", "how many years of experience do you have ");
+		questionAnswer.put("experience", "Perfect ! You can apply on this link https://jobs.offer.com");
+		questionAnswer.put("speciality", "great , what is your speciality ?");
 		questionAnswer.put("conversation-continue", "What else can I help you with?");
 		questionAnswer.put("conversation-complete", "Nice chatting with you. Bbye.");
 
