@@ -10,26 +10,21 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
-@Document(collection = "Message")
-public class Message {
+@Document(collection = "Answer")
+public class Answer {
+
+
     @Id
-    private int id;
-    private  int idDisscussion ;
+    private  int id;
     private String text;
 
-    public Message(int id, int idDisscussion, String text) {
-
+    public Answer(int id, String text) {
         this.id = id;
-        this.idDisscussion = idDisscussion;
         this.text = text;
     }
 
     public int getId() {
         return id;
-    }
-
-    public int getIdDisscussion() {
-        return idDisscussion;
     }
 
     public String getText() {
@@ -38,10 +33,6 @@ public class Message {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public void setIdDisscussion(int idDisscussion) {
-        this.idDisscussion = idDisscussion;
     }
 
     public void setText(String text) {
